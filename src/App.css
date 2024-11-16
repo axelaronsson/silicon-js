@@ -25,6 +25,9 @@ body, section, div, header, footer, main, aside, nav, blockquote, p, span {
 
 main {
     background-color: var(--color-white);
+    &.dark {
+        background-color: var(--color-dark);
+    }
 }
 
 body, input {
@@ -39,8 +42,10 @@ body, input {
     width: 44px;
     height: 44px;
     border-radius: 100%;
-    /* background-color: rgb(255 255 255 / 4%); */
     background-color: white;
+    &.dark {
+        background-color: rgb(255 255 255 / 4%);
+    }
 }
 
 .chevron-down {
@@ -70,6 +75,13 @@ header {
         display: flex;
         justify-content: space-between;
         margin: auto;
+
+        &.dark a {
+            color: var(--color-white);
+            opacity: 0.9;
+            font-weight: 400;
+            letter-spacing: .3px;
+        }
 
         img {
             margin-right: 48px;
@@ -201,6 +213,21 @@ header {
         margin: 0px auto;
         background-color: transparent;
         position: relative;
+
+        &.dark h1 {
+            color: var(--color-white);
+        }
+        &.dark p {
+            color: var(--color-white);
+            opacity: 0.7;
+            font-weight: 300;
+            letter-spacing: 0.1px;
+        }
+        &.dark a {
+            color: var(--color-white);
+            font-weight: 200;
+            opacity: 0.7;
+        }
     }
 
     .hero-content {
@@ -249,9 +276,7 @@ header {
         a {
             font-size: 14px;
             font-weight: 400;
-            /* color: var(--color-white); */
             color: var(--color-gray-700);
-            /* opacity: 0.7; */
             line-height: 160%;
             letter-spacing: .3px;
         }
@@ -841,9 +866,9 @@ a:hover {
         /* border: 1px solid rgba(255, 255, 255, 0.18); */
         border-right: none;
         border-radius: 8px 0px 0px 8px;
-        &.dark {
-            /* background: url(); */
-        }
+        /* &.dark {
+            background: url();
+        } */
 
     }
 

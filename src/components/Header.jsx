@@ -10,9 +10,9 @@ export default function Header( {handleSwitch, mode} ) {
 
   return (
     <header>
-        <div className="header-wrapper">
+        <div className={`header-wrapper ${mode ? 'dark' : ''}`}>
             <div>
-                <img src="/src/assets/lightsolid.svg" alt="" />
+                <img src={`/src/assets/${mode ? '' : 'light'}solid.svg`} alt="" />
                  <a href="#">Features</a>
                  <a href="#">Contact</a>
             </div>

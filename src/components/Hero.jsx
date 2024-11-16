@@ -1,9 +1,9 @@
 import React from 'react'
 
-export default function Hero() {
+export default function Hero( { mode } ) {
   return (
     <section className="hero">
-        <div className="hero-wrapper">
+        <div className={`hero-wrapper ${mode ? 'dark' : ''}`}>
             <div className="hero-content">
                 <div>
                     <h1>Manage All Your Money in One App</h1>
@@ -11,14 +11,14 @@ export default function Hero() {
                         <br/> Save, spend & manage money in your pocket.
                     </p>
                     <div className="app-buttons">
-                        <img src="/src/assets/lightappstore.svg" alt="" />
-                        <img src="/src/assets/lightgoogleplay.svg" alt="" />
+                        <img src={`/src/assets/${mode ? '' : 'light'}appstore.svg`} alt="" />
+                        <img src={`/src/assets/${mode ? '' : 'light'}googleplay.svg`} alt="" />
                     </div>
                 </div>
                 <div className="discover">
-                    <div className="caret-btn"></div>
+                    <div className={`caret-btn ${mode ? 'dark' : ''}`}></div>
                     <div className="chevron-down">
-                        <img src="/src/assets/lightchevron-down.svg" alt="" />
+                        <img src={`/src/assets/${mode ? '' : 'light'}chevron-down.svg`} alt="" />
                     </div>
                     <a href="#">Discover more</a>
                 </div>

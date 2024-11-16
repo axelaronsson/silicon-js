@@ -8,8 +8,8 @@ import Faq from './Faq'
 
 export default function MainContent( { mode } ) {
   return (
-    <main>
-        <Hero />
+    <main className={mode ? 'dark' : ''}>
+        <Hero mode={mode} />
         <AppFeatures mode={ mode } />
         <How />
         <Banking />
