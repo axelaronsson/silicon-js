@@ -1,15 +1,26 @@
 import React from 'react'
+import { useState, useEffect } from 'react'
 
-export default function AppFeatures() {
+export default function AppFeatures( { mode } ) {
+    const [light, setLight] = useState('light')
+
+    useEffect(() => {
+        if (mode) {
+
+        }
+    //   return () => {
+    //   }
+    }, [])
+
   return (
     <section className="app-features">
         <div className="logos">
-            <img src="/src/assets/logo1.svg" alt="" />
-            <img src="/src/assets/logo2.svg" alt="" />
-            <img src="/src/assets/logo3.svg" alt="" />
-            <img src="/src/assets/logo4.svg" alt="" />
-            <img src="/src/assets/logo5.svg" alt="" />
-            <img src="/src/assets/logo6b.svg" alt="" />
+            <img src={`/src/assets/${mode ? '' : 'light'}logo1.svg`} alt="" />
+            <img src={`/src/assets/${mode ? '' : 'light'}logo2.svg`} alt="" />
+            <img src={`/src/assets/${mode ? '' : 'light'}logo3.svg`} alt="" />
+            <img src={`/src/assets/${mode ? '' : 'light'}logo4.svg`} alt="" />
+            <img src={`/src/assets/${mode ? '' : 'light'}logo5.svg`} alt="" />
+            <img src={`/src/assets/${mode ? '' : 'light'}logo6.svg`} alt="" />
         </div>
         <div className="features-content">
             <img src="/src/assets/features-phone.svg" alt="" />

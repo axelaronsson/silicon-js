@@ -1,16 +1,28 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import './App.css'
 import Header from './components/Header'
 import Footer from './components/Footer'
 import MainContent from './components/MainContent'
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [switchMode, setSwitchMode] = useState(false)
+
+  const handleSwitch = () => {
+    setSwitchMode(!switchMode)
+  }
+
+  useEffect(() => {
+    console.log('handle switch', switchMode);
+
+    // return () => {
+    // }
+  }, [switchMode])
+
 
   return (
     <>
-      <Header />
-      <MainContent />
+      <Header mode={switchMode} handleSwitch={ handleSwitch } />
+      <MainContent mode={switchMode} />
       <Footer />
     </>
   )

@@ -6,11 +6,11 @@ import Banking from './Banking'
 import Clients from './Clients'
 import Faq from './Faq'
 
-export default function MainContent() {
+export default function MainContent( { mode } ) {
   return (
     <main>
         <Hero />
-        <AppFeatures />
+        <AppFeatures mode={ mode } />
         <How />
         <Banking />
         <Clients />

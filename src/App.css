@@ -3,8 +3,13 @@
 :root {
     --color-dark: #0B0F19; /* Gray 900 */
     --color-primary: #6366F1;
-    --color-gray-700: #565973;
+    --color-gray-100: #F3F6FF;
+    --color-gray-300: #E2E5F1;
+    --color-gray-400: #D4D7E5;
+    --color-gray-500: #B4B7C9;
     --color-gray: #9397AD; /* Gray 600 */
+    --color-gray-700: #565973;
+    --color-gray-800: #33354D;
     --color-white: #FFFFFF;
     --color-success: #22C55E;
 }
@@ -19,7 +24,7 @@ body, section, div, header, footer, main, aside, nav, blockquote, p, span {
 }
 
 main {
-    background-color: var(--color-dark);
+    background-color: var(--color-white);
 }
 
 body, input {
@@ -34,7 +39,8 @@ body, input {
     width: 44px;
     height: 44px;
     border-radius: 100%;
-    background-color: rgb(255 255 255 / 4%);
+    /* background-color: rgb(255 255 255 / 4%); */
+    background-color: white;
 }
 
 .chevron-down {
@@ -46,7 +52,8 @@ body, input {
     height: 44px;
     border-radius: 100%;
     font-size: 12px;
-    color: white;
+    /* color: white; */
+    color: var(--color-gray-800);
     cursor: pointer;
     &:hover {
         background-color: rgba(255, 255, 255, 0.04);
@@ -64,6 +71,10 @@ header {
         justify-content: space-between;
         margin: auto;
 
+        img {
+            margin-right: 48px;
+        }
+
         div {
             display: flex;
             flex-direction: row;
@@ -71,13 +82,13 @@ header {
         }
 
         a {
-            margin-left: 48px;
+            margin-right: 1.5rem;
             font-size: 16px;
             line-height: 160%;
-            font-weight: 400;
-            letter-spacing: .3px;
-            color: var(--color-white);
-            opacity: 0.85;
+            font-weight: 600;
+            /* letter-spacing: .3px; */
+            color: var(--color-gray-800);
+            /* opacity: 0.85; */
         }
 
         p {
@@ -135,9 +146,12 @@ header {
         left: 0;
         right: 0;
         bottom: 0;
-        background-color: rgb(255 255 255 / 25%);
+        background-color: var(--color-gray);
         -webkit-transition: .4s;
         transition: .4s;
+        /* &.light {
+          background-color: var(--color-gray);
+        } */
       }
 
       .slider:before {
@@ -201,7 +215,7 @@ header {
         h1 {
             margin: 0;
             font-size: 56px;
-            color: var(--color-white);
+            color: var(--color-dark);
             font-weight: 800;
             line-height: 130%;
         }
@@ -209,11 +223,11 @@ header {
         p {
             font-size: 18px;
             line-height: 160%;
-            color: var(--color-white);
-            opacity: 0.7;
+            color: var(--color-gray-700);
+            /* opacity: 0.7; */
             margin-top: 1.4rem;
-            font-weight: 200;
-            letter-spacing: 0.3px;
+            font-weight: 400;
+            /* letter-spacing: 0.3px; */
         }
     }
 
@@ -234,9 +248,10 @@ header {
         justify-content: space-between;
         a {
             font-size: 14px;
-            font-weight: 200;
-            color: var(--color-white);
-            opacity: 0.7;
+            font-weight: 400;
+            /* color: var(--color-white); */
+            color: var(--color-gray-700);
+            /* opacity: 0.7; */
             line-height: 160%;
             letter-spacing: .3px;
         }
@@ -297,20 +312,23 @@ a:hover {
 
     h1 {
         margin: 0;
-        letter-spacing: .3px;
+        /* letter-spacing: .3px; */
         font-size: 40px;
+        font-weight: 800;
         line-height: 130%;
-        color: var(--color-white);
+        /* color: var(--color-white); */
+        color: var(--color-dark);
     }
 
     p {
         margin-top: 10px;
         font-size: 18px;
         line-height: 160%;
-        font-weight: 200;
-        letter-spacing: .3px;
-        color: var(--color-white);
-        opacity: 0.5;
+        font-weight: 400;
+        /* letter-spacing: .3px; */
+        /* color: var(--color-white); */
+        color: var(--color-gray);
+        /* opacity: 0.5; */
     }
 
     .features-info {
@@ -341,15 +359,18 @@ a:hover {
         h5 {
             margin: 0px 0px 12px 0px;
             font-size: 20px;
+            font-weight: 800;
             line-height: 140%;
-            color: var(--color-white);
+            /* color: var(--color-white); */
+            color: var(--color-dark);
         }
 
         p {
             font-size: 16px;
             line-height: 160%;
-            color: var(--color-white);
-            opacity: 0.7;
+            /* color: var(--color-white); */
+            color: var(--color-gray-700);
+            /* opacity: 0.7; */
         }
         img {
             height: 28px;
@@ -360,16 +381,19 @@ a:hover {
 
 .how {
     height: 1077px;
-    background-color: rgba(255, 255, 255, 0.04);
+    /* background-color: rgba(255, 255, 255, 0.04); */
+    background-color: var(--color-gray-100);
     padding-top: 80px;
     text-align: center;
 
     h1 {
         font-size: 40px;
         line-height: 130%;
-        color: var(--color-white);
+        color: var(--color-dark);
+        font-weight: 800;
+        /* color: var(--color-white); */
         margin: 0;
-        letter-spacing: .3px;
+        /* letter-spacing: .3px; */
     }
 
     .how-wrapper {
@@ -384,7 +408,9 @@ a:hover {
     h4 {
         font-size: 24px;
         line-height: 140%;
-        color: var(--color-white);
+        color: var(--color-dark);
+        font-weight: 800;
+        /* color: var(--color-white); */
         margin-bottom: .8rem;
     }
 
@@ -392,11 +418,12 @@ a:hover {
         width: 636px;
         margin: auto;
         font-size: 16px;
-        font-weight: 200;
+        font-weight: 400;
         line-height: 160%;
-        color: var(--color-white);
-        opacity: 0.7;
-        letter-spacing: .3px;
+        color: var(--color-gray-700);
+        /* color: var(--color-white); */
+        /* opacity: 0.7; */
+        /* letter-spacing: .3px; */
     }
 }
 
@@ -419,7 +446,8 @@ a:hover {
         flex: 1;
         height: 500px;
         position: relative;
-        color: var(--color-white);
+        color: var(--color-dark);
+        /* color: var(--color-white); */
          ul {
             list-style: none;
             color: var(--color-primary);
@@ -439,10 +467,11 @@ a:hover {
 
         p {
             display: inline-block;
-            color: var(--color-white);
-            opacity: 0.7;
+            color: var(--color-gray-700);
+            /* color: var(--color-white); */
+            /* opacity: 0.7; */
             font-size: 16px;
-            font-weight: 200;
+            font-weight: 400;
             line-height: 160%;
             margin-left: .6rem;
         }
@@ -517,7 +546,7 @@ a:hover {
 
         p {
             margin-left: 0;
-            letter-spacing: .2px;
+            /* letter-spacing: .2px; */
             margin-bottom: 30px;
         }
     }
@@ -526,7 +555,8 @@ a:hover {
 .clients {
     height: 542px;
     padding-top: 80px;
-    background-color: rgba(255, 255, 255, 0.04)
+    background-color: var(--color-gray-100);
+    /* background-color: rgba(255, 255, 255, 0.04); */
 }
 
 .clients-wrapper {
@@ -543,24 +573,29 @@ a:hover {
 
     h2 {
         font-size: 40px;
+        font-weight: 800;
         line-height: 130%;
-        color: var(--color-white);
+        color: var(--color-dark);
+        /* color: var(--color-white); */
         padding-right: 80px;
         margin-top: 0;
-        letter-spacing: .3px;
+        /* letter-spacing: .3px; */
     }
 
     .comments {
         height: 329px;
-        background-color: rgba(255, 255, 255, 0.04);
+        background-color: white;
+        /* background-color: rgba(255, 255, 255, 0.04); */
         padding: 24px;
         font-size: 18px;
         line-height: 160%;
-        font-weight: 300;
-        letter-spacing: .2px;
+        font-weight: 400;
+        /* letter-spacing: .2px; */
         border-radius: 8px;
-        color: rgba(255, 255, 255, 0.70);
+        color: var(--color-gray-700);
+        /* color: rgba(255, 255, 255, 0.70); */
         position: relative;
+        box-shadow: 0px 4px 4px 2px rgb(0 0 0 / 8%);
 
         .quote {
             display: flex;
@@ -598,15 +633,17 @@ a:hover {
         .avatar p {
             font-size: 14px;
             font-weight: 200;
-            color: var(--color-white);
-            opacity: 0.5;
+            color: var(--color-gray);
+            /* color: var(--color-white); */
+            /* opacity: 0.5; */
         }
 
         span {
             font-size: 16px;
             height: 23px;
-            font-weight: 600;
-            color: var(--color-white);
+            font-weight: 800;
+            color: var(--color-dark);
+            /* color: var(--color-white); */
         }
 
     }
@@ -621,22 +658,27 @@ a:hover {
     h2 {
         font-size: 32px;
         line-height: 130%;
+        font-weight: 800;
         margin: 0;
-        color: var(--color-white);
+        color: var(--color-dark);
+        /* color: var(--color-white); */
     }
 
     a {
-        color: var(--color-white);
+        color: var(--color-dark);
+        font-weight: 600;
+        /* color: var(--color-white); */
         cursor: pointer;
     }
 
     p {
         font-size: 14px;
         line-height: 160%;
-        font-weight: 200;
-        letter-spacing: .2px;
-        color: var(--color-white);
-        opacity: 0.7;
+        font-weight: 400;
+        /* letter-spacing: .2px; */
+        color: var(--color-gray-700);
+        /* color: var(--color-white); */
+        /* opacity: 0.7; */
         margin-top: 1rem;
     }
 
@@ -677,7 +719,8 @@ a:hover {
             display: inline-block;
             margin-top: 40px;
             padding: 23px;
-            border: 1px solid rgba(255, 255, 255, 0.15);
+            border: 1px solid var(--color-gray-300);
+            /* border: 1px solid rgba(255, 255, 255, 0.15); */
             border-radius: 8px;
             color: var(--color-primary);
         }
@@ -713,13 +756,14 @@ a:hover {
             width: 746px;
             padding: 15px 24px;
             border-radius: 8px;
-            background-color: rgba(255, 255, 255, 0.04);
+            /* background-color: rgba(255, 255, 255, 0.04); */
+            box-shadow: 0px 4px 4px 3px rgb(0 0 0 / 6%);
             color: var(--color-white);
         }
 
         > div > div {
             font-weight: 500;
-            letter-spacing: .1px;
+            /* letter-spacing: .1px; */
             display: flex;
             align-items: center;
             justify-content: space-between;
@@ -755,13 +799,16 @@ a:hover {
     margin: 112px auto 0px;
     padding: 0px 110px;
     border-radius: 8px;
-    background-color: rgba(255, 255, 255, 0.041);
+    background-color: var(--color-gray-100);
+    /* background-color: rgba(255, 255, 255, 0.041); */
     color: var(--color-white);
 
     h2 {
+        color: var(--color-dark);
+        font-weight: 800;
         padding-left: 2rem;
         line-height: 140%;
-        letter-spacing: .2px;
+        /* letter-spacing: .2px; */
     }
 
     > div {
@@ -777,20 +824,31 @@ a:hover {
     }
 
     input {
-        background: url(/src/assets/bx-envelope.svg) no-repeat;
+        background: url('/src/assets/lightbx-envelope.svg') no-repeat;
         background-position-y: center;
         background-position-x: 1rem;
-        background-color: rgba(255, 255, 255, 2%);
+        background-color: white;
+        /* background-color: rgba(255, 255, 255, 2%); */
         width: 332px;
         margin-left: 70px;
         padding-left: 46px;
         height: 52px;
         font-size: 16px;
         line-height: 16%;
-        color: rgba(255, 255, 255, 40%);
-        border: 1px solid rgba(255, 255, 255, 0.18);
+        color: var(--color-gray-500);
+        /* color: rgba(255, 255, 255, 40%); */
+        border: 1px solid var(--color-gray-400);
+        /* border: 1px solid rgba(255, 255, 255, 0.18); */
         border-right: none;
         border-radius: 8px 0px 0px 8px;
+        &.dark {
+            /* background: url(); */
+        }
+
+    }
+
+    input::placeholder {
+        color: var(--color-gray-500);
     }
 
     button {
@@ -821,6 +879,8 @@ footer {
     font-size: 14px;
     font-weight: 200;
     letter-spacing: .3px;
-    background-color: var(--color-dark);
-    color: rgba(255, 255, 255, 50%);
+    background-color: white;
+    /* background-color: var(--color-dark); */
+    color: var(--color-gray-700);
+    /* color: rgba(255, 255, 255, 50%); */
 }

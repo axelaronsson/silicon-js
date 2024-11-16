@@ -1,18 +1,20 @@
 import React from 'react'
 // import { useRef } from 'react';
 
-export default function Header() {
+export default function Header( {handleSwitch, mode} ) {
 
-    const handleSwitch = (e) => {
-        console.log(e.target.checked);
-    }
+    // const handleSwitch = (e) => {
+
+    //     console.log(e.target.checked);
+    // }
 
   return (
     <header>
         <div className="header-wrapper">
             <div>
-                <img src="/src/assets/solid.svg" alt="" />
+                <img src="/src/assets/lightsolid.svg" alt="" />
                  <a href="#">Features</a>
+                 <a href="#">Contact</a>
             </div>
             <div>
                 <p>Dark Mode</p>

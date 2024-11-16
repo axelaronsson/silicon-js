@@ -11,14 +11,14 @@ export default function Hero() {
                         <br/> Save, spend & manage money in your pocket.
                     </p>
                     <div className="app-buttons">
-                        <img src="/src/assets/appstore.svg" alt="" />
-                        <img src="/src/assets/googleplay.svg" alt="" />
+                        <img src="/src/assets/lightappstore.svg" alt="" />
+                        <img src="/src/assets/lightgoogleplay.svg" alt="" />
                     </div>
                 </div>
                 <div className="discover">
                     <div className="caret-btn"></div>
                     <div className="chevron-down">
-                        <img src="/src/assets/chevron-down.svg" alt="" />
+                        <img src="/src/assets/lightchevron-down.svg" alt="" />
                     </div>
                     <a href="#">Discover more</a>
                 </div>
