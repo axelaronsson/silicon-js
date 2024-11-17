@@ -22,8 +22,8 @@ export default function Faq( { mode } ) {
                 <div>
                     <div>
                         <a>Is any of my personal information stored in the App?</a>
-                        <div className="caret-btn">
-                            <div className="chevron-down">
+                        <div className={`caret-btn ${ mode ? 'dark' : ''}`}>
+                            <div className={`chevron-down ${ mode ? 'dark' : ''}`}>
                                 <i className="fa-sharp fa-solid fa-chevron-down"></i>
                             </div>
                         </div>
@@ -32,8 +32,8 @@ export default function Faq( { mode } ) {
                 <div>
                     <div>
                         <a>What formats can I download my transaction history in?</a>
-                        <div className="caret-btn">
-                            <div className="chevron-down">
+                        <div className={`caret-btn ${ mode ? 'dark' : ''}`}>
+                            <div className={`chevron-down ${ mode ? 'dark' : ''}`}>
                                 <i className="fa-sharp fa-solid fa-chevron-down"></i>
                             </div>
                         </div>
@@ -42,8 +42,8 @@ export default function Faq( { mode } ) {
                 <div>
                     <div>
                         <a>Can I schedule future transfers?</a>
-                        <div className="caret-btn">
-                            <div className="chevron-down">
+                        <div className={`caret-btn ${ mode ? 'dark' : ''}`}>
+                            <div className={`chevron-down ${ mode ? 'dark' : ''}`}>
                                 <i className="fa-sharp fa-solid fa-chevron-down"></i>
                             </div>
                         </div>
@@ -53,8 +53,8 @@ export default function Faq( { mode } ) {
                 <div>
                     <div>
                         <a>When can I use Banking App services?</a>
-                        <div className="caret-btn">
-                            <div className="chevron-down">
+                        <div className={`caret-btn ${ mode ? 'dark' : ''}`}>
+                            <div className={`chevron-down ${ mode ? 'dark' : ''}`}>
                                 <i className="fa-sharp fa-solid fa-chevron-down"></i>
                             </div>
                         </div>
@@ -63,8 +63,8 @@ export default function Faq( { mode } ) {
                 <div>
                     <div>
                         <a>Can I create my own password that is easy for me to remember?</a>
-                        <div className="caret-btn">
-                            <div className="chevron-down">
+                        <div className={`caret-btn ${ mode ? 'dark' : ''}`}>
+                            <div className={`chevron-down ${ mode ? 'dark' : ''}`}>
                                 <i className="fa-sharp fa-solid fa-chevron-down"></i>
                             </div>
                         </div>
@@ -73,8 +73,8 @@ export default function Faq( { mode } ) {
                 <div>
                     <div>
                         <a>What happens if I forget or lose my password?</a>
-                        <div className="caret-btn">
-                            <div className="chevron-down">
+                        <div className={`caret-btn ${ mode ? 'dark' : ''}`}>
+                            <div className={`chevron-down ${ mode ? 'dark' : ''}`}>
                                 <i className="fa-sharp fa-solid fa-chevron-down"></i>
                             </div>
                         </div>
@@ -82,7 +82,7 @@ export default function Faq( { mode } ) {
                 </div>
             </div>
         </div>
-        <div className="subscribe">
+        <div className={`subscribe ${ mode ? 'dark' : ''}`}>
             <div className="subscribe-content">
                 <img src="/src/assets/notification.svg" alt="" />
                 <h2>Subscribe to our newsletter to stay informed about latest updates</h2>

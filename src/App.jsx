@@ -23,7 +23,7 @@ function App() {
     <>
       <Header mode={switchMode} handleSwitch={ handleSwitch } />
       <MainContent mode={switchMode} />
-      <Footer />
+      <Footer mode={ switchMode } />
     </>
   )
 }
