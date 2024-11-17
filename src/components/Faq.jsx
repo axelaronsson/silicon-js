@@ -1,10 +1,22 @@
 import React, { useState, useEffect } from 'react'
-import { dataObj } from '../data';
 
 export default function Faq( { mode } ) {
 
     const [activeFaq, setActiveFaq] = useState(0)
-    const [faqs, setFaqs] = useState(dataObj)
+    const [faqs, setFaqs] = useState([])
+    const [emailInput, setEmailInput] = useState('')
+    const [fieldValid, setFieldValid] = useState(undefined)
+
+
+    const handleSubscribe = (e) => {
+        const emailPattern = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|.(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+
+        if (emailInput.match(emailPattern)) {
+            setFieldValid(true)
+        } else {
+            setFieldValid(false)
+        }
+    }
 
     useEffect(() => {
         const fetchData = async () => {
@@ -12,13 +24,12 @@ export default function Faq( { mode } ) {
                 const response = await fetch('https://win24-assignment.azurewebsites.net/api/faq');
                 const data = await response.json();
                 setFaqs(data)
-                console.log(data);
+                console.log(data, 'api');
             } catch (error) {
                 console.error('Error fetching data:', error);
             }
         };
-        // fetchData();
-        // console.log(dataObj);
+        fetchData();
     }, []);
 
     return (
@@ -62,8 +73,13 @@ export default function Faq( { mode } ) {
                     <h2>Subscribe to our newsletter to stay informed about latest updates</h2>
                 </div>
                 <div className="subscribe-input">
-                    <input placeholder="Your Email" type="email" />
-                    <button>Subscribe</button>
+                    {fieldValid === false && <span>Enter a valid email</span>}
+                    <input
+                        onBlur={handleSubscribe}
+                        onChange={(e) => {setEmailInput(e.target.value)}}
+                        placeholder="Your Email"
+                        type="email" />
+                    <button >Subscribe</button>
                 </div>
             </div>
         </section>

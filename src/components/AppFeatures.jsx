@@ -1,16 +1,6 @@
 import React from 'react'
-import { useState, useEffect } from 'react'
 
 export default function AppFeatures( { mode } ) {
-    const [light, setLight] = useState('light')
-
-    useEffect(() => {
-        if (mode) {
-
-        }
-    //   return () => {
-    //   }
-    }, [])
 
   return (
     <section className={`app-features ${mode ? 'dark' : ''}`}>

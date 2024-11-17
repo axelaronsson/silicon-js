@@ -1,12 +1,6 @@
 import React from 'react'
-// import { useRef } from 'react';
 
 export default function Header( {handleSwitch, mode, handlePage} ) {
-
-    // const handleSwitch = (e) => {
-
-    //     console.log(e.target.checked);
-    // }
 
   return (
     <header>

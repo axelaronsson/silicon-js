@@ -1,9 +1,8 @@
 import React, { useState, useEffect} from 'react'
-import { clientData } from '../data';
 
 export default function Clients( { mode } ) {
 
-    const [data, setData] = useState(clientData)
+    const [data, setData] = useState([])
 
     useEffect(() => {
         const fetchData = async () => {
@@ -11,12 +10,12 @@ export default function Clients( { mode } ) {
                 const response = await fetch('https://win24-assignment.azurewebsites.net/api/testimonials');
                 const data = await response.json();
                 setData(data)
-                console.log(data);
+                console.log(data, 'api');
             } catch (error) {
                 console.error('Error fetching data:', error);
             }
         };
-        //fetchData();
+        fetchData();
     }, []);
   return (
     <section className={`clients ${ mode ? 'dark' : ''}`}>

@@ -87,6 +87,7 @@ header {
 
         img {
             margin-right: 48px;
+            cursor: pointer;
         }
 
         div {
@@ -929,6 +930,13 @@ a:hover {
 
     .subscribe-input {
         flex: 0.8;
+        position: relative;
+        span {
+            position: absolute;
+            color: red;
+            left: 70px;
+            top: -30px;
+        }
     }
 
     input {
@@ -1036,6 +1044,20 @@ a:hover {
         /* border: 1px dashed; */
     }
 
+    .breadcrumb {
+        position: absolute;
+        display: flex;
+        top: -50px;
+        font-size: 14px;
+
+        .nav-home {
+            color: var(--color-gray);
+        }
+        a {
+            padding: 0px 10px;
+        }
+    }
+
     .contact-info {
         width: 500px;
         display: flex;
@@ -1056,6 +1078,7 @@ a:hover {
         font-size: 16px;
         padding: 0;
         letter-spacing: .3px;
+        cursor: pointer;
         i {
             margin-left: 10px;
         }
@@ -1074,6 +1097,11 @@ a:hover {
         h2 {
             margin-top: 0;
             font-size: 32px;
+        }
+
+        span {
+            padding-left: 10px;
+            color: red;
         }
     }
 
@@ -1134,6 +1162,7 @@ a:hover {
             font-family: 'Manrope';
             padding: 0;
             letter-spacing: .3px;
+            cursor: pointer;
         }
     }
 }
