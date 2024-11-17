@@ -4,7 +4,7 @@ import { dataObj } from '../data';
 export default function Faq( { mode } ) {
 
     const [activeFaq, setActiveFaq] = useState(0)
-    const [faqs, setFaqs] = useState([])
+    const [faqs, setFaqs] = useState(dataObj)
 
     useEffect(() => {
         const fetchData = async () => {
@@ -40,8 +40,8 @@ export default function Faq( { mode } ) {
                 </div>
                 <div className="dropdowns">
                     {
-                        dataObj?.map( (obj, idx) => {
-                            return <div key={idx} onClick={() => { setActiveFaq(idx + 1)}} className={activeFaq === idx + 1 ? 'active' : ''}>
+                        faqs?.map( (obj, idx) => {
+                            return <div key={obj.id} onClick={() => { setActiveFaq(idx + 1)}} className={activeFaq === idx + 1 ? 'active' : ''}>
                                         <div>
                                             <a>{ obj.title }</a>
                                             <div className={`caret-btn ${ mode ? 'dark' : ''}`}>
