@@ -2,6 +2,7 @@ import React from 'react'
 
 export default function Contact() {
   return (
+    <main>
     <div className='contact-page'>
         <div className="wrapper">
             <h1>Contact Us</h1>
@@ -46,6 +47,49 @@ export default function Contact() {
                 </div>
             </div>
         </div>
+        
     </div>
+    <div className="location">
+        <div className="wrapper">
+            <img src="/src/assets/map.png" alt="" />
+            <div className="address-info">
+                <h5>Medical Center 1</h5>
+                <div>
+                    <img src="/src/assets/bx-map.svg" alt="" />
+                    <p>4517 Washington Ave. Manchester, Kentucky 39495</p>
+                </div>
+                <div>
+                    <img src="/src/assets/bx-phone-call.svg" alt="" />
+                    <p>(406) 555-0120</p>
+                </div>
+                <div>
+                    <img src="/src/assets/bx-time-five.svg" alt="" />
+                    <p><span>Mon – Fri:</span> 9:00 am – 22:00 am</p><br/>
+                </div>
+                <p><span>Sat – Sun:</span> 9:00 am – 20:00 am</p><br/>
+                <h5>Medical Center 2</h5>
+                <div>
+                    <img src="/src/assets/bx-map.svg" alt="" />
+                    <p>2464 Royal Ln. Mesa,New Jersey 45463</p>
+                </div>
+                <div>
+                    <img src="/src/assets/bx-phone-call.svg" alt="" />
+                    <p>(406) 544-0123</p>
+                </div>
+                <div>
+                    <img src="/src/assets/bx-time-five.svg" alt="" />
+                    <p><span>Mon – Fri:</span> 9:00 am – 22:00 am</p><br/>
+                </div>
+                <p><span>Sat – Sun:</span> 9:00 am – 20:00 am</p><br/>
+                <div className='social-media'>
+                    <img src="/src/assets/fb.svg" alt="" />
+                    <img src="/src/assets/insta.svg" alt="" />
+                    <img src="/src/assets/twitter.svg" alt="" />
+                    <img src="/src/assets/yt.svg" alt="" />
+                </div>
+            </div>
+        </div>
+    </div>
+    </main>
   )
 }

@@ -1105,6 +1105,51 @@ a:hover {
     }
 }
 
+.location {
+    min-height: 800px;
+
+    .wrapper {
+        display: flex;
+        width: 1296px;
+        height: 540px;
+        margin: 210px auto 0;
+    }
+
+    .address-info {
+        margin-left: 134px;
+
+        > div {
+            display: flex;
+            margin-top: 1rem;
+        }
+
+        span {
+            font-weight: 700;
+        }
+
+        p {
+            margin-left: 0.5rem;
+        }
+
+        > p {
+            padding-left: 20px;
+            margin-bottom: 40px;
+        }
+    }
+
+    h5 {
+        font-size: 24px;
+        font-weight: 800;
+        margin: 0 0 26px 0;
+    }
+
+    .social-media {
+        img {
+            margin-right: 1rem;
+        }
+    }
+}
+
 footer {
     display: flex;
     justify-content: center;
