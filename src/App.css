@@ -972,6 +972,139 @@ a:hover {
     }
 }
 
+.contact-page {
+    height: 777px;
+    padding-top: 76px;
+    background-color: var(--color-gray-100);
+
+    h1 {
+        font-size: 40px;
+        margin-top: 0.4rem;
+        height: 84px;
+        font-weight: 800;
+    }
+
+    h2 {
+        margin-top: 4px;
+        margin-bottom: 14px;
+        font-weight: 800;
+    }
+
+    p {
+        line-height: 160%;
+        color: var(--color-gray-700);
+    }
+
+    .wrapper {
+        width: 1296px;
+        height: 100%;
+        position: relative;
+        margin: 90px auto 0px;
+        /* border: 1px dashed; */
+    }
+
+    .contact-info {
+        width: 500px;
+        display: flex;
+        margin-top: 40px;
+
+        > div:nth-child(2) {
+            margin-left: 24px;
+        }
+    }
+
+    .contact-button {
+        width: 180px;
+        margin-top: 28px;
+        color: var(--color-primary);
+        background-color: transparent;
+        border: none;
+        text-align: left;
+        font-size: 16px;
+        padding: 0;
+        letter-spacing: .3px;
+        i {
+            margin-left: 10px;
+        }
+    }
+
+    .contact-form {
+        width: 636px;
+        height: 718px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        border-radius: 8px;
+        box-shadow: 0px 4px 4px 2px rgb(0 0 0 / 8%);
+        background-color: white;
+
+        h2 {
+            margin-top: 0;
+            font-size: 32px;
+        }
+    }
+
+    .form-wrapper {
+        width: 492px;
+        height: 80%;
+        margin: 70px auto 0;
+        /* border: 1px dashed; */
+
+        input, select {
+            width: 100%;
+            height: 52px;
+            border: 1px solid var(--color-gray-400);
+            border-radius: 8px;
+            margin-top: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .specialist {
+            border: 1px solid var(--color-gray-400);
+            border-radius: 8px;
+            margin-top: 0.5rem;
+        }
+
+        .specialist select {
+            border: none;
+            border-right: 1rem solid transparent;
+            border-left: 1rem solid transparent;
+            margin: 0;
+        }
+
+        option, select {
+            font-family: 'Manrope';
+            font-weight: 500;
+            font-size: 14px;
+        }
+
+        label {
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+
+        form {
+            margin-top: 40px;
+        }
+
+        .form-button {
+            width: 100%;
+            height: 52px;
+            margin-top: 144px;
+            color: var(--color-white);
+            background-color: var(--color-primary);
+            box-shadow: 0px 4px 8px rgba(99, 102, 241, 0.7);
+            border: none;
+            border-radius: 8px;
+            text-align: center;
+            font-size: 16px;
+            font-family: 'Manrope';
+            padding: 0;
+            letter-spacing: .3px;
+        }
+    }
+}
+
 footer {
     display: flex;
     justify-content: center;

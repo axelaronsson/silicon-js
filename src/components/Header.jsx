@@ -1,7 +1,7 @@
 import React from 'react'
 // import { useRef } from 'react';
 
-export default function Header( {handleSwitch, mode} ) {
+export default function Header( {handleSwitch, mode, handlePage} ) {
 
     // const handleSwitch = (e) => {
 
@@ -12,9 +12,9 @@ export default function Header( {handleSwitch, mode} ) {
     <header>
         <div className={`header-wrapper ${mode ? 'dark' : ''}`}>
             <div>
-                <img src={`/src/assets/${mode ? '' : 'light'}solid.svg`} alt="" />
+                <img onClick={() => {handlePage('home')}} src={`/src/assets/${mode ? '' : 'light'}solid.svg`} alt="" />
                  <a href="#">Features</a>
-                 <a href="#">Contact</a>
+                 <a onClick={() => {handlePage('contact')}} href="#">Contact</a>
             </div>
             <div>
                 <p>Dark Mode</p>
