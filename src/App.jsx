@@ -33,7 +33,7 @@ function App() {
         page === 'home' ?
         <MainContent mode={switchMode} />
         :
-        <Contact />
+        <Contact mode={switchMode} />
       }
       <Footer mode={ switchMode } />
     </>

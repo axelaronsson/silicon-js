@@ -995,6 +995,39 @@ a:hover {
         color: var(--color-gray-700);
     }
 
+    &.dark {
+        background-color: rgba(255, 255, 255, 0.04);
+        h1, h2 {
+            color: var(--color-white);
+        }
+
+        p {
+            font-weight: 200;
+            color: var(--color-white);
+            opacity: 0.7;
+        }
+
+        label {
+            color: var(--color-white);
+        }
+
+        .contact-form {
+            background-color: var(--color-gray-800);
+        }
+
+        input, select {
+            background-color: rgba(255, 255, 255, 0.04);
+            color: var(--color-white);
+        }
+        option {
+            background-color: var(--color-dark);
+        }
+        .contact-form button {
+            box-shadow: none;
+        }
+
+    }
+
     .wrapper {
         width: 1296px;
         height: 100%;
@@ -1107,6 +1140,17 @@ a:hover {
 
 .location {
     min-height: 800px;
+
+    &.dark {
+        h5 {
+            color: white;
+        }
+        p {
+            font-weight: 200;
+            color: var(--color-white);
+            opacity: 0.7;
+        }
+    }
 
     .wrapper {
         display: flex;
