@@ -42,7 +42,7 @@ body, input {
     width: 44px;
     height: 44px;
     border-radius: 100%;
-    background-color: white;
+    background-color: var(--color-gray-100);
     &.dark {
         background-color: rgb(255 255 255 / 4%);
     }
@@ -725,7 +725,7 @@ a:hover {
 
 .faq-wrapper {
     width: 1296px;
-    height: 600px;
+    min-height: 600px;
     display: flex;
     margin: 112px auto 0px;
 
@@ -836,17 +836,21 @@ a:hover {
     }
 
     .dropdowns {
-        display: flex;
+        /* display: flex;
         flex-direction: column;
-        justify-content: space-between;
+        justify-content: space-between; */
         > div {
             display: flex;
+            flex-direction: column;
+            overflow: hidden;
             height: 68px;
             width: 746px;
             padding: 15px 24px;
+            margin: 1rem 0;
             border-radius: 8px;
             box-shadow: 0px 4px 4px 3px rgb(0 0 0 / 6%);
             color: var(--color-white);
+            transition: height 0.5s;
         }
 
         > div > div {
@@ -858,20 +862,18 @@ a:hover {
             flex: 1;
         }
 
-        > div:nth-child(3) > div {
-            flex: 0;
-        }
-
-        > div:nth-child(3) .caret-btn {
+        > div.active .caret-btn {
             background-color: var(--color-primary);
             box-shadow: 0px 2px 5px rgba(99, 101, 241, 0.5);
+            transition: background-color 0.5s;
         }
-        > div:nth-child(3) .chevron-down {
+        > div.active .chevron-down {
             transform: rotate(180deg);
         }
 
-        > div:nth-child(3) {
+        > div.active {
             flex-direction: column;
+            transition: height 0.5s;
             height: 180px;
             border: 1px solid rgba(255, 255, 255, 0.15);
 
@@ -908,9 +910,6 @@ a:hover {
         font-weight: 300;
         color: rgba(255, 255, 255, 40%);
     }
-    /* &.dark {
-        background: url();
-    } */
 
     h2 {
         color: var(--color-dark);
