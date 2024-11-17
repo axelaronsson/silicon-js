@@ -13,7 +13,7 @@ export default function AppFeatures( { mode } ) {
     }, [])
 
   return (
-    <section className="app-features">
+    <section className={`app-features ${mode ? 'dark' : ''}`}>
         <div className="logos">
             <img src={`/src/assets/${mode ? '' : 'light'}logo1.svg`} alt="" />
             <img src={`/src/assets/${mode ? '' : 'light'}logo2.svg`} alt="" />

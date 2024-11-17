@@ -8,13 +8,13 @@ import Faq from './Faq'
 
 export default function MainContent( { mode } ) {
   return (
-    <main className={mode ? 'dark' : ''}>
-        <Hero mode={mode} />
+    <main className={ mode ? 'dark' : '' }>
+        <Hero mode={ mode } />
         <AppFeatures mode={ mode } />
-        <How />
-        <Banking />
-        <Clients />
-        <Faq />
+        <How mode={ mode } />
+        <Banking mode={ mode } />
+        <Clients mode={ mode } />
+        <Faq mode={ mode } />
     </main>
   )
 }

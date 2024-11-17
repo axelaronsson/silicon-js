@@ -1,8 +1,8 @@
 import React from 'react'
 
-export default function Banking() {
+export default function Banking( { mode } ) {
   return (
-    <section className="banking">
+    <section className={`banking ${ mode ? 'dark' : '' }`}>
         <div className="banking-wrapper">
             <div className="bank-content">
                 <div className="inner-box one">

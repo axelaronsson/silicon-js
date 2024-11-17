@@ -251,10 +251,8 @@ header {
             font-size: 18px;
             line-height: 160%;
             color: var(--color-gray-700);
-            /* opacity: 0.7; */
             margin-top: 1.4rem;
             font-weight: 400;
-            /* letter-spacing: 0.3px; */
         }
     }
 
@@ -314,6 +312,24 @@ a:hover {
 }
 
 .app-features {
+    &.dark h1 {
+        color: var(--color-white);
+    }
+    &.dark p {
+        color: var(--color-white);
+        opacity: 0.5;
+        font-weight: 200;
+        letter-spacing: .3px;
+    }
+    &.dark .feature-grid h5 {
+        color: var(--color-white);
+    }
+
+    &.dark .feature-grid p {
+        letter-spacing: .3px;
+        color: var(--color-white);
+        opacity: 0.7;
+    }
     .logos {
         width: 1296px;
         height: 100px;
@@ -350,10 +366,7 @@ a:hover {
         font-size: 18px;
         line-height: 160%;
         font-weight: 400;
-        /* letter-spacing: .3px; */
-        /* color: var(--color-white); */
         color: var(--color-gray);
-        /* opacity: 0.5; */
     }
 
     .features-info {
@@ -406,10 +419,24 @@ a:hover {
 
 .how {
     height: 1077px;
-    /* background-color: rgba(255, 255, 255, 0.04); */
     background-color: var(--color-gray-100);
     padding-top: 80px;
     text-align: center;
+    &.dark {
+        background-color: rgba(255, 255, 255, 0.04);
+    }
+    &.dark h1 {
+        color: var(--color-white);
+    }
+    &.dark h4 {
+        color: var(--color-white);
+    }
+    &.dark p {
+        font-weight: 200;
+        color: var(--color-white);
+        opacity: 0.7;
+        letter-spacing: .3px;
+    }
 
     h1 {
         font-size: 40px;
@@ -446,13 +473,19 @@ a:hover {
         font-weight: 400;
         line-height: 160%;
         color: var(--color-gray-700);
-        /* color: var(--color-white); */
-        /* opacity: 0.7; */
-        /* letter-spacing: .3px; */
     }
 }
 
 .banking {
+    &.dark .inner-box h2 {
+        color: var(--color-white);
+    }
+    &.dark .inner-box p {
+        color: var(--color-white);
+        opacity: 0.7;
+        font-weight: 200;
+        letter-spacing: 0.3px;
+    }
     padding-bottom: 112px;
     .banking-wrapper {
         height: 1080px;
@@ -493,8 +526,6 @@ a:hover {
         p {
             display: inline-block;
             color: var(--color-gray-700);
-            /* color: var(--color-white); */
-            /* opacity: 0.7; */
             font-size: 16px;
             font-weight: 400;
             line-height: 160%;
@@ -581,7 +612,31 @@ a:hover {
     height: 542px;
     padding-top: 80px;
     background-color: var(--color-gray-100);
-    /* background-color: rgba(255, 255, 255, 0.04); */
+    &.dark {
+        background-color: rgba(255, 255, 255, 0.04);
+        p {
+            font-weight: 300;
+        }
+    }
+    &.dark .clients-wrapper h2 {
+        color: var(--color-white);
+        letter-spacing: .3px;
+        font-weight: 700;
+    }
+    &.dark .comments {
+        background-color: rgba(255, 255, 255, 0.04);
+        letter-spacing: .2px;
+        color: rgba(255, 255, 255, 0.70);
+        box-shadow: none;
+    }
+    &.dark .comments .avatar p {
+        color: var(--color-white);
+        opacity: 0.5;
+    }
+    &.dark .comments span {
+        color: var(--color-white);
+        font-weight: 600;
+    }
 }
 
 .clients-wrapper {
@@ -601,24 +656,19 @@ a:hover {
         font-weight: 800;
         line-height: 130%;
         color: var(--color-dark);
-        /* color: var(--color-white); */
         padding-right: 80px;
         margin-top: 0;
-        /* letter-spacing: .3px; */
     }
 
     .comments {
         height: 329px;
         background-color: white;
-        /* background-color: rgba(255, 255, 255, 0.04); */
         padding: 24px;
         font-size: 18px;
         line-height: 160%;
         font-weight: 400;
-        /* letter-spacing: .2px; */
         border-radius: 8px;
         color: var(--color-gray-700);
-        /* color: rgba(255, 255, 255, 0.70); */
         position: relative;
         box-shadow: 0px 4px 4px 2px rgb(0 0 0 / 8%);
 
@@ -659,8 +709,6 @@ a:hover {
             font-size: 14px;
             font-weight: 200;
             color: var(--color-gray);
-            /* color: var(--color-white); */
-            /* opacity: 0.5; */
         }
 
         span {
@@ -668,7 +716,6 @@ a:hover {
             height: 23px;
             font-weight: 800;
             color: var(--color-dark);
-            /* color: var(--color-white); */
         }
 
     }
@@ -686,7 +733,20 @@ a:hover {
         font-weight: 800;
         margin: 0;
         color: var(--color-dark);
-        /* color: var(--color-white); */
+    }
+    &.dark h2 {
+        color: var(--color-white);
+        font-weight: 700;
+    }
+    &.dark a {
+        color: var(--color-white);
+    }
+    &.dark .contact > div {
+        border: 1px solid rgba(255, 255, 255, 0.15);
+    }
+    &.dark .dropdowns > div {
+        background-color: rgba(255, 255, 255, 0.04);
+        box-shadow: none;
     }
 
     a {
@@ -745,7 +805,6 @@ a:hover {
             margin-top: 40px;
             padding: 23px;
             border: 1px solid var(--color-gray-300);
-            /* border: 1px solid rgba(255, 255, 255, 0.15); */
             border-radius: 8px;
             color: var(--color-primary);
         }
@@ -781,7 +840,6 @@ a:hover {
             width: 746px;
             padding: 15px 24px;
             border-radius: 8px;
-            /* background-color: rgba(255, 255, 255, 0.04); */
             box-shadow: 0px 4px 4px 3px rgb(0 0 0 / 6%);
             color: var(--color-white);
         }

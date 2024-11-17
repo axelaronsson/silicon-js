@@ -1,8 +1,8 @@
 import React from 'react'
 
-export default function How() {
+export default function How( { mode } ) {
   return (
-    <section className="how">
+    <section className={`how ${ mode ? 'dark' : ''}`}>
         <h1>How Does It Work?</h1>
         <div className="how-wrapper">
             <img src="/src/assets/how-iphone1.svg" alt="" />

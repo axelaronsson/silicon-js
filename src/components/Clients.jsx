@@ -1,8 +1,8 @@
 import React from 'react'
 
-export default function Clients() {
+export default function Clients( { mode } ) {
   return (
-    <section className="clients">
+    <section className={`clients ${ mode ? 'dark' : ''}`}>
         <div className="clients-wrapper">
             <div>
                 <h2>Clients are Loving Our App</h2>

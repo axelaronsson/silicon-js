@@ -1,9 +1,9 @@
 import React from 'react'
 
-export default function Faq() {
+export default function Faq( { mode } ) {
   return (
     <section className="faq">
-        <div className="faq-wrapper">
+        <div className={`faq-wrapper ${ mode ? 'dark' : ''}`}>
             <div className="contact">
                 <h2>Any questions? <br/> Check out the FAQs</h2>
                 <p>Still have unanswered questions and need to get in touch?</p>
